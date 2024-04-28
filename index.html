@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f0f8ff;
+        }
+        .navbar, footer {
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #0069d9;
+        }
+    </style>
+    <script>
+        function submitForm() {
+            alert("Form submitted!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Children's Park</h1>
+    </header>
+    <nav class="navbar">
+        <a href="#home">Home</a> |
+        <a href="#blog">Blog</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <h2>Welcome to our park!</h2>
+        <p>Enjoy your time here.</p>
+        <button class="btn">Call to Action</button>
+        <form onsubmit="event.preventDefault(); submitForm();">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        Copyright &copy; 2022 Children's Park
+    </footer>
+</body>
+</html>
